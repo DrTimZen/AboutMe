@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200;
+  background-color: #fff8f3;
+}
+
+/* GENERAl ELEMENTS */
+
+.section {
+  padding: 8rem 5rem;
+}
+
+.section-title {
+  color: #2eb086;
+  text-align: center;
+}
+
+.section-text {
+  padding: 2rem 15rem;
+  line-height: 1.5;
+}
+
+.btn--down {
+  margin: 5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn--down:hover {
+  color: #cdd0cb;
+}
+
+p {
+  color: #04293a;
+  margin-top: 1.5rem;
+}
+
+/* navbar */
+
+.nav {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6rem;
+  z-index: 100;
+}
+
+.nav.sticky {
+  position: fixed;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 6rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  font-weight: 200;
+  color: #cdd0cb;
+  text-decoration: none;
+  display: block;
+  transition: all 1s;
+}
+
+.nav-link:hover {
+  color: #2eb086;
+  transition: all 1s;
+}
+
+/* header-section */
+
+.header {
+  padding: 0 3rem;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  margin-top: 3rem;
+  padding: 2rem;
+  flex: 1;
+  max-width: 115rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  row-gap: 3rem;
+  align-content: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 3.2rem;
+  margin: 0 4rem;
+  transition: all 5s;
+}
+
+.heading-thin {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.heading-thick:hover {
+  color: #52006a;
+  transition: all 1s;
+}
+
+h4 {
+  font-size: 0.95rem;
+  margin: 0 4rem;
+  color: #2eb086;
+}
+
+.header-image {
+  width: 50%;
+  grid-column: 2/3;
+  grid-row: 1 / 4;
+  transform: translateY(-1rem);
+  border-radius: 50%;
+}
+
+.header-image:hover {
+  transition: translateY(3rem);
+}
+
+/* about me */
