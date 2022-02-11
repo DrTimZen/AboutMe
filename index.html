@@ -26,17 +26,17 @@
   </head>
 
   <body>
-    <header class="header" id="header">
+    <section class="section" id="header">
       <nav class="nav">
         <ul class="nav-links">
           <li class="nav-item">
-            <a class="nav-link" href="#about-me">about-me</a>
+            <a class="nav-link" href="#about-me"># about me</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects">projects</a>
+            <a class="nav-link" href="#projects"># projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact-me">contact</a>
+            <a class="nav-link" href="#contact-me"># contact</a>
           </li>
         </ul>
       </nav>
@@ -51,35 +51,92 @@
           src="/images/portrait-tim.jpeg"
           alt="portrait tim uredat"
         />
+        <button class="btn--down">
+          <i class="fas fa-solid fa-arrow-down"></i>
+        </button>
       </div>
-      <button class="btn--down">
-        <i class="fas fa-solid fa-arrow-down"></i>
-      </button>
-    </header>
-    <section class="section" id="about-me"></section>
-    <div class="section-title">
-      <h2>about me</h2>
-    </div>
+    </section>
+    <section class="section" id="about-me">
+      <div class="section-title">
+        <h2>about me</h2>
+      </div>
 
-    <div class="section-text">
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet.
-      </p>
-    </div>
+      <div class="section-text">
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+          rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+          ipsum dolor sit amet.
+        </p>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="section-title"><h2>projects</h2></div>
+      <div class="section-text container-cards">
+        <button class="cards-btn cards-btn-left">
+          <i class="fa fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="projects-cards">
+          <div class="projects-card card-1">
+            <h3>card1</h3>
+            card1
+          </div>
+          <div class="projects-card card-2 hidden">
+            <h3>card2</h3>
+            card2
+          </div>
+          <div class="projects-card card-3 hidden">
+            <h3>card3</h3>
+            card3
+          </div>
+        </div>
+        <button class="cards-btn cards-btn-right">
+          <i class="fa fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
 
-    <section class="section" id="projects"></section>
-
-    <section class="section" id="contact-me"></section>
+    <section class="section" id="contact-me">
+      <div class="section-title"><h2>contact me</h2></div>
+      <div class="section-text">
+        <p>
+          At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+          kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+          amet.
+        </p>
+        <div class="contact-icons">
+          <a href="mailto:tim.zen@icloud.com" class="contact-btn">
+            <i class="contact-icon fa fa-solid fa-at"></i>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://twitter.com/zen_tim"
+            class="contact-btn"
+          >
+            <i class="contact-icon fa fa-brands fa-twitter"></i>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/DrTimZen"
+            class="contact-btn"
+          >
+            <i class="contact-icon fa fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <i class="fa fa-solid fa-copyright"></i> Tim Zen 2022
+    </footer>
   </body>
 </html>
