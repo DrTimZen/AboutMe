@@ -6,7 +6,6 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -32,7 +31,7 @@ body {
   line-height: 1.5;
 }
 
-.btn--down {
+.btn-scrollDown {
   margin: 5rem;
   font-size: 1.1rem;
   cursor: pointer;
@@ -43,7 +42,7 @@ body {
   text-align: center;
 }
 
-.btn--down:hover {
+.btn-scrollDown:hover {
   color: #2eb086;
 }
 
@@ -146,7 +145,16 @@ h4:hover {
   border-radius: 50%;
   grid-column: 3;
   grid-row: 2;
+  transition: all 0.7s;
+}
+
+.fixed {
   transform: translateY(-90%) translateX(-120%);
+  transition: all 0.7s;
+}
+
+.roll {
+  transform: translateY(-150%) translateX(-120%);
   transition: all 0.7s;
 }
 
