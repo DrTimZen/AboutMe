@@ -18,13 +18,13 @@ body {
 /* GENERAl ELEMENTS */
 
 .section {
-  padding: 10% 10%;
+  padding: 5% 10%;
 }
 
 .section-title {
   color: #2eb086;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .section-text {
@@ -99,7 +99,8 @@ p {
 /* header-section */
 
 .header-title {
-  padding: 15% 0 10%;
+  padding: 15% 0 15%;
+
   display: grid;
 
   grid-template-columns: 25% 50% 25%;
@@ -150,6 +151,10 @@ h4:hover {
 }
 
 /* about me */
+
+.about-me {
+  height: 100vh;
+}
 
 /* projects */
 
