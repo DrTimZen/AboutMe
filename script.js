@@ -41,7 +41,6 @@ navLinksContainer.addEventListener('click', function (e) {
 const navHeight = nav.getBoundingClientRect().height;
 
 const stickyNav = function (entries) {
-  console.log(entries);
   const [entry] = entries;
 
   if (!entry.isIntersecting) {
@@ -62,9 +61,25 @@ navObserver.observe(document.querySelector('#header'));
 
 // reveal sections
 
-// sections.forEach(section => {
-//   section.classList.add('section--hidden');
-// });
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  console.log(entry);
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section--hidden');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.5,
+});
+
+sections.forEach(section => {
+  section.classList.add('section--hidden');
+  sectionObserver.observe(section);
+});
 
 // img behaviour
 
