@@ -17,7 +17,13 @@ body {
 /* GENERAl ELEMENTS */
 
 .section {
-  padding: 5% 10%;
+  padding: 10% 10%;
+  transition: transform 1s opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .section-title {
@@ -55,14 +61,15 @@ p {
 /* navbar */
 
 .nav {
-  height: 20%;
+  height: 12%;
   width: 100%;
-  padding: 0 20%;
+  padding: 2% 20% 0;
   z-index: 100;
 }
 
 .nav.sticky {
   position: fixed;
+  background: rgba(255, 248, 243, 0.95);
 }
 
 .nav-links {
@@ -70,7 +77,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 45%;
+  gap: 5%;
 }
 
 .nav-item {
@@ -92,7 +99,6 @@ p {
 .nav-link:hover {
   color: #2eb086;
   transition: all 0.7s;
-  font-size: 1.1rem;
 }
 
 /* header-section */
@@ -156,6 +162,20 @@ h4:hover {
 .roll {
   transform: translateY(-150%) translateX(-120%);
   transition: all 0.7s;
+}
+
+.header-icon {
+  font-size: 0.9rem;
+  border: none;
+  background: transparent;
+  color: #cdd0cb;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+}
+
+.header-icon:hover {
+  color: #2eb086;
 }
 
 /* about me */

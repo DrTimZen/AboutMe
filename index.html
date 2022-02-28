@@ -26,7 +26,7 @@
   </head>
 
   <body>
-    <section class="section" id="header">
+    <section class="header" id="header">
       <nav class="nav">
         <ul class="nav-links">
           <li class="nav-item">
@@ -52,11 +52,11 @@
           alt="portrait tim"
         />
         <button class="btn-scrollDown">
-          <i class="fas fa-solid fa-arrow-down"></i>
+          <i class="fa fa-solid fa-arrow-down"></i>
         </button>
       </div>
     </section>
-    <section class="section about-me" id="about-me">
+    <section class="section" id="about-me">
       <div class="section-title">
         <h2>about me</h2>
       </div>
@@ -80,27 +80,29 @@
     </section>
     <section class="section" id="projects">
       <div class="section-title"><h2>projects</h2></div>
-      <div class="section-text container-cards">
-        <button class="cards-btn cards-btn-left">
-          <i class="fa fa-solid fa-chevron-left"></i>
-        </button>
-        <div class="projects-cards">
-          <div class="projects-card card-1">
-            <h3>card1</h3>
-            card1
+      <div class="section-text">
+        <div class="container-cards">
+          <button class="cards-btn cards-btn-left">
+            <i class="fa fa-solid fa-chevron-left"></i>
+          </button>
+          <div class="projects-cards">
+            <div class="projects-card card-1">
+              <h3>card1</h3>
+              card1
+            </div>
+            <div class="projects-card card-2 hidden">
+              <h3>card2</h3>
+              card2
+            </div>
+            <div class="projects-card card-3 hidden">
+              <h3>card3</h3>
+              card3
+            </div>
           </div>
-          <div class="projects-card card-2 hidden">
-            <h3>card2</h3>
-            card2
-          </div>
-          <div class="projects-card card-3 hidden">
-            <h3>card3</h3>
-            card3
-          </div>
+          <button class="cards-btn cards-btn-right">
+            <i class="fa fa-solid fa-chevron-right"></i>
+          </button>
         </div>
-        <button class="cards-btn cards-btn-right">
-          <i class="fa fa-solid fa-chevron-right"></i>
-        </button>
       </div>
     </section>
 
@@ -138,5 +140,8 @@
     <footer class="footer">
       <i class="fa fa-solid fa-copyright"></i> Tim Zen 2022
     </footer>
+    <a href="#header" class="header-icon">
+      <i class="fa fa-solid fa-arrow-up"></i>
+    </a>
   </body>
 </html>
