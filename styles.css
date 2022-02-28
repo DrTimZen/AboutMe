@@ -17,7 +17,9 @@ body {
 /* GENERAl ELEMENTS */
 
 .section {
-  padding: 10% 10%;
+  width: 80%;
+  margin: 0 auto;
+  padding: 7% 0;
   transition: all 2s;
 }
 
@@ -32,7 +34,7 @@ body {
 }
 
 .section-text {
-  padding: 5% 20%;
+  padding: 5% 15%;
   line-height: 1.5;
 }
 
@@ -102,6 +104,12 @@ p {
 
 /* header-section */
 
+.header {
+  width: 80%;
+  height: 50%;
+  margin: 0 auto;
+}
+
 .header-title {
   padding: 15% 0 15%;
 
@@ -132,12 +140,13 @@ h1 {
 }
 
 h4 {
-  font-size: 0.94rem;
+  font-size: 0.9rem;
   color: #2eb086;
   transition: all 0.7s;
   grid-column: 2/5;
   grid-row: 4;
   padding: 0.8%;
+  transform: translateY(-1rem);
 }
 
 h4:hover {
@@ -159,7 +168,7 @@ h4:hover {
 }
 
 .roll {
-  transform: translateY(-150%) translateX(-120%);
+  transform: translateY(-120%) translateX(-120%);
   transition: all 0.7s;
 }
 
@@ -185,13 +194,15 @@ h4:hover {
 
 /* projects */
 
-.container-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.cards-slider {
+  max-width: 100rem;
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
 }
 
 .cards-btn {
+  position: absolute;
   border: none;
   background: transparent;
   font-size: 1.3rem;
@@ -199,21 +210,13 @@ h4:hover {
   cursor: pointer;
 }
 
-.projects-cards {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: stretch;
-  margin-top: 2rem;
-}
-
-.projects-card {
-  width: 300px;
-  height: 300px;
+.project-card {
+  max-width: 50%;
+  height: 30rem;
   background-color: #92a9bd;
   text-align: center;
   padding: 3%;
+  margin: 0 auto;
 }
 
 .hidden {

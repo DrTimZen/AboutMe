@@ -93,3 +93,54 @@ image.addEventListener('mouseenter', function () {
     image.setAttribute('src', './images/portrait-tim.jpeg');
   }, 3000);
 });
+
+// card slider
+
+const cardSlider = function () {
+  const cards = document.querySelectorAll('.project-card');
+
+  const bntLeft = document.querySelector('.btn-left');
+  const btnRight = document.querySelector('.btn-right');
+
+  let curCard = 0;
+  const maxCard = cards.length;
+
+  // slider
+  const goToCard = function (card) {
+    cards.forEach(
+      (c, i) => (c.style.transform = `translateX${100 * (i - card)}%`)
+    );
+  };
+
+  // next card
+
+  const nextCard = function () {
+    if (curCard === maxCard - 1) {
+      curCard = 0;
+    } else curCard++;
+
+    goToCard(curCard);
+  };
+
+  // previous card
+
+  const prevCard = function () {
+    if (curCard === 0) {
+      curCard = maxCard - 1;
+    } else curCard--;
+
+    goToCard(curCard);
+  };
+
+  const init = () => goToCard(0);
+  init();
+
+  bntLeft.addEventListener('click', prevCard);
+  btnRight.addEventListener('click', nextCard);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'ArrowLeft') prevCard();
+    if (e.key === 'ArrowRight') nextCard();
+  });
+};
+cardSlider();
