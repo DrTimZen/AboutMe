@@ -195,14 +195,39 @@ h4:hover {
 /* projects */
 
 .cards-slider {
-  max-width: 100rem;
-  height: 30rem;
+  max-width: 40vw;
+  height: 50vh;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(146, 169, 189, 0.1);
+  text-align: center;
+  padding: 3%;
+
+  object-fit: cover;
+
+  transition: transform 1s;
+}
+
+.project-card > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .cards-btn {
-  position: absolute;
+  position: relative;
+  top: 50%;
+  z-index: 10;
   border: none;
   background: transparent;
   font-size: 1.3rem;
@@ -210,13 +235,18 @@ h4:hover {
   cursor: pointer;
 }
 
-.project-card {
-  max-width: 50%;
-  height: 30rem;
-  background-color: #92a9bd;
-  text-align: center;
-  padding: 3%;
-  margin: 0 auto;
+.cards-btn:hover {
+  color: #2eb086;
+}
+
+.cards-btn-left {
+  bottom: 13rem;
+  right: 0;
+}
+
+.cards-btn-right {
+  bottom: 13rem;
+  left: 92%;
 }
 
 .hidden {

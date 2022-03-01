@@ -16,7 +16,7 @@ const sections = document.querySelectorAll('.section');
 // scroll to about me
 
 btnScrollToAboutMe.addEventListener('click', function () {
-  sectionAboutMe.scrollIntoView({ behavior: 'smooth' });
+  sectionAboutMe.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
 // scroll to header
@@ -32,7 +32,9 @@ navLinksContainer.addEventListener('click', function (e) {
   e.preventDefault();
   if (e.target.classList.contains('nav-link')) {
     const id = e.target.getAttribute('href');
-    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    document
+      .querySelector(id)
+      .scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 });
 
@@ -98,9 +100,8 @@ image.addEventListener('mouseenter', function () {
 
 const cardSlider = function () {
   const cards = document.querySelectorAll('.project-card');
-
-  const bntLeft = document.querySelector('.btn-left');
-  const btnRight = document.querySelector('.btn-right');
+  const bntLeft = document.querySelector('.cards-btn-left');
+  const btnRight = document.querySelector('.cards-btn-right');
 
   let curCard = 0;
   const maxCard = cards.length;
@@ -108,7 +109,7 @@ const cardSlider = function () {
   // slider
   const goToCard = function (card) {
     cards.forEach(
-      (c, i) => (c.style.transform = `translateX${100 * (i - card)}%`)
+      (c, i) => (c.style.transform = `translateX(${100 * (i - card)}%)`)
     );
   };
 
