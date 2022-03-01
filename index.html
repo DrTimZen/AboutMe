@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hubballi&family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <!-- Favicon -->
@@ -79,53 +79,19 @@
       </div>
     </section>
     <section class="section" id="projects">
-      <div class="section-title"><h2>projects</h2></div>
+      <div class="section-title">
+        <h2>projects</h2>
+      </div>
       <div class="section-text">
         <div class="cards-slider">
           <div class="project-card">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./images/rollindicesproject.png" />
-                </div>
-                <div class="flip-card-back">
-                  <h3>Rollin` Dices Game</h3>
-                  <p>A small webapp for JS practice</p>
-                  <p>
-                    <a
-                      class="flip-card-link"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://rollindices.netlify.app/"
-                      >rollindices.netlify.app</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
+            <img
+              class="project-img"
+              src="./images/rollindicesproject.png"
+              alt="rollin dices project"
+            />
           </div>
-          <div class="project-card">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <img src="./images/rollindicesproject.png" />
-                </div>
-                <div class="flip-card-back">
-                  <h3>Rollin` Dices Game</h3>
-                  <p>A small webapp for JS practice</p>
-                  <p>
-                    <a
-                      class="flip-card-link"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      href="https://rollindices.netlify.app/"
-                      >rollindices.netlify.app</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="project-card"></div>
           <div class="project-card">
             <h3>card3</h3>
             card3
@@ -177,5 +143,23 @@
     <a href="#" class="header-icon">
       <i class="fa fa-solid fa-arrow-up"></i>
     </a>
+
+    <div class="modal-window hidden">
+      <div class="modal-text">
+        <h3>Rollin` Dices Project</h3>
+        <p>A small webapp Game for JS practice</p>
+        <p>
+          <a
+            target="_blank"
+            class="modal-link"
+            href="https://rollindices.netlify.app/"
+            >rollindices.netlify.app</a
+          >
+        </p>
+      </div>
+      <button class="modal-btn">x</button>
+    </div>
+
+    <!-- <div class="overlay"></div> -->
   </body>
 </html>

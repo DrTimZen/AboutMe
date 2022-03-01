@@ -13,6 +13,13 @@ const image = document.querySelector('.header-image');
 
 const sections = document.querySelectorAll('.section');
 
+const modalWindow = document.querySelector('.modal-window');
+const overlay = document.querySelector('.overlay');
+
+const modalBtn = document.querySelector('.modal-btn');
+
+const sliderCards = document.querySelector('.cards-slider');
+
 // scroll to about me
 
 btnScrollToAboutMe.addEventListener('click', function () {
@@ -145,3 +152,20 @@ const cardSlider = function () {
   });
 };
 cardSlider();
+
+// modal window
+
+const openModalWindow = function () {};
+
+// close modal window
+
+modalBtn.addEventListener('click', function () {
+  modalWindow.classList.add('hidden');
+});
+
+sliderCards.addEventListener('click', function (e) {
+  if (e.target.classList.contains('project-img')) {
+    console.log(e.target);
+    modalWindow.classList.remove('hidden');
+  }
+});
