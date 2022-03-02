@@ -2,22 +2,14 @@
 
 const btnScrollToAboutMe = document.querySelector('.btn-scrollDown');
 const sectionAboutMe = document.querySelector('#about-me');
-
 const btnScrollToHeader = document.querySelector('.header-icon');
-
 const nav = document.querySelector('.nav');
-
 const navLinksContainer = document.querySelector('.nav-links');
-
 const image = document.querySelector('.header-image');
-
 const sections = document.querySelectorAll('.section');
-
 const modalWindow = document.querySelector('.modal-window');
 const overlay = document.querySelector('.overlay');
-
 const modalBtn = document.querySelector('.modal-btn');
-
 const sliderCards = document.querySelector('.cards-slider');
 
 // scroll to about me
@@ -72,8 +64,6 @@ navObserver.observe(document.querySelector('#header'));
 
 const revealSection = function (entries, observer) {
   const [entry] = entries;
-
-  console.log(entry);
 
   if (!entry.isIntersecting) return;
   entry.target.classList.remove('section--hidden');
@@ -155,17 +145,89 @@ cardSlider();
 
 // modal window
 
-const openModalWindow = function () {};
+const modal_window = function () {
+  const projectsData = [
+    {
+      id: 1,
+      header: 'Rollin` Dice Game',
+      text: 'a small webapp game for JS practice',
+      url: 'https://rollindices.netlify.app/',
+      urlText: 'rollindices.netlify.app',
+    },
+    {
+      id: 2,
+      header: 'cd covers dymala',
+      text: 'layout cd covers for dymala band',
+      url: './images/dymala-cover.png',
+      urlText: 'cd cover dymala band',
+    },
+    {
+      id: 3,
+      header: 'Hannah Arendt Lectures 2015',
+      text: 'design and layout of info material for the <br> Hannah Arendt Lectures 2015<br> in Hanover',
+      url: './images/info material hannah arendt lectures 2015.png',
+      urlText: 'work sample hannah arendt lectures 2015',
+    },
+  ];
 
-// close modal window
+  let modalOpen = false;
 
-modalBtn.addEventListener('click', function () {
-  modalWindow.classList.add('hidden');
-});
+  // open modal window
 
-sliderCards.addEventListener('click', function (e) {
-  if (e.target.classList.contains('project-img')) {
-    console.log(e.target);
-    modalWindow.classList.remove('hidden');
-  }
-});
+  const openModalWindow = function (e) {
+    if (e.target.classList.contains('project-img')) {
+      const id = e.target.getAttribute('id') - 1;
+      modalWindow.classList.remove('hidden');
+      modalWindow.insertAdjacentHTML(
+        'afterbegin',
+        `
+      <div class="modal-text">
+      <h3>${projectsData[id].header}</h3>
+      <p>${projectsData[id].text}</p>
+      <p>
+        <a
+          target="_blank"
+          class="modal-link"
+          href="${projectsData[id].url}"
+          >${projectsData[id].urlText}</a
+        >
+      </p>
+    </div>
+      `
+      );
+    }
+  };
+
+  // close modal window
+
+  const closeModalWindow = function (e) {
+    if (
+      e.target === modalBtn ||
+      !e.target.closest('.modal-window' || e.key === 'Escape')
+    ) {
+      modalWindow.classList.add('hidden');
+      modalWindow.removeChild(modalWindow.firstElementChild);
+    }
+  };
+
+  const checkModal = function (e) {
+    console.log(modalOpen);
+    if (!modalOpen) {
+      openModalWindow(e);
+      modalOpen = true;
+      return;
+    }
+
+    if (modalOpen) {
+      closeModalWindow(e);
+      modalOpen = false;
+      return;
+    }
+  };
+
+  // event listener
+
+  window.addEventListener('click', checkModal);
+  window.addEventListener('keydown', checkModal);
+};
+modal_window();
