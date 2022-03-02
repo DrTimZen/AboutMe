@@ -8,7 +8,6 @@ const navLinksContainer = document.querySelector('.nav-links');
 const image = document.querySelector('.header-image');
 const sections = document.querySelectorAll('.section');
 const modalWindow = document.querySelector('.modal-window');
-const overlay = document.querySelector('.overlay');
 const modalBtn = document.querySelector('.modal-btn');
 const sliderCards = document.querySelector('.cards-slider');
 
@@ -170,11 +169,10 @@ const modal_window = function () {
     },
   ];
 
-  let modalOpen = false;
-
   // open modal window
 
   const openModalWindow = function (e) {
+    console.log(e.target);
     if (e.target.classList.contains('project-img')) {
       const id = e.target.getAttribute('id') - 1;
       modalWindow.classList.remove('hidden');
@@ -201,33 +199,13 @@ const modal_window = function () {
   // close modal window
 
   const closeModalWindow = function (e) {
-    if (
-      e.target === modalBtn ||
-      !e.target.closest('.modal-window' || e.key === 'Escape')
-    ) {
-      modalWindow.classList.add('hidden');
-      modalWindow.removeChild(modalWindow.firstElementChild);
-    }
-  };
-
-  const checkModal = function (e) {
-    console.log(modalOpen);
-    if (!modalOpen) {
-      openModalWindow(e);
-      modalOpen = true;
-      return;
-    }
-
-    if (modalOpen) {
-      closeModalWindow(e);
-      modalOpen = false;
-      return;
-    }
+    modalWindow.classList.add('hidden');
+    modalWindow.removeChild(modalWindow.firstElementChild);
   };
 
   // event listener
 
-  window.addEventListener('click', checkModal);
-  window.addEventListener('keydown', checkModal);
+  sliderCards.addEventListener('click', openModalWindow);
+  modalBtn.addEventListener('click', closeModalWindow);
 };
 modal_window();

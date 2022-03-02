@@ -113,7 +113,7 @@ p {
 }
 
 .header-title {
-  padding: 15% 0 15%;
+  padding: 10% 0 15%;
 
   display: grid;
 
@@ -217,11 +217,10 @@ h4:hover {
 
   object-fit: cover;
 
+  transition: transform 1s;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  transition: transform 1s;
 }
 
 .project-card > img {
