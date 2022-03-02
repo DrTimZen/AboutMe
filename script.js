@@ -10,6 +10,7 @@ const sections = document.querySelectorAll('.section');
 const modalWindow = document.querySelector('.modal-window');
 const modalBtn = document.querySelector('.modal-btn');
 const sliderCards = document.querySelector('.cards-slider');
+const overlay = document.querySelector('.overlay');
 
 // scroll to about me
 
@@ -172,10 +173,10 @@ const modal_window = function () {
   // open modal window
 
   const openModalWindow = function (e) {
-    console.log(e.target);
     if (e.target.classList.contains('project-img')) {
       const id = e.target.getAttribute('id') - 1;
       modalWindow.classList.remove('hidden');
+      overlay.classList.remove('hidden');
       modalWindow.insertAdjacentHTML(
         'afterbegin',
         `
@@ -201,11 +202,17 @@ const modal_window = function () {
   const closeModalWindow = function (e) {
     modalWindow.classList.add('hidden');
     modalWindow.removeChild(modalWindow.firstElementChild);
+    overlay.classList.add('hidden');
   };
 
   // event listener
 
   sliderCards.addEventListener('click', openModalWindow);
   modalBtn.addEventListener('click', closeModalWindow);
+  overlay.addEventListener('click', closeModalWindow);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && !modalWindow.classList.contains('hidden'))
+      closeModalWindow();
+  });
 };
 modal_window();
