@@ -250,10 +250,13 @@ h4:hover {
 .cards-btn {
   z-index: 10;
   border: none;
-  background: transparent;
-  font-size: 1.3rem;
+  background: rgba(46, 176, 134, 0.1);
+  border-radius: 50%;
+  font-size: 1rem;
   color: #0d694c;
   cursor: pointer;
+  padding: 3% 3.8%;
+  text-align: center;
 }
 .cards-btn:hover {
   color: #2eb086;
@@ -485,8 +488,8 @@ h4:hover {
   }
 
   .cards-slider-btn {
-    transform: translateY(3rem);
-    gap: 75%;
+    transform: translateY(2rem);
+    gap: 90%;
   }
 
   .cards-btn-left {
@@ -516,5 +519,6 @@ h4:hover {
 
   .footer {
     width: 50%;
+    padding: 0 0 1rem;
   }
 }
