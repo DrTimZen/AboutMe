@@ -437,7 +437,7 @@ h4:hover {
   }
 
   .section {
-    width: 80%;
+    width: 95%;
     height: 100%;
     margin-bottom: 10%;
 
@@ -460,15 +460,22 @@ h4:hover {
     font-size: 20px;
   }
 
+  .section-text {
+    padding: 15% 10% 30%;
+  }
+
   .cards-slider {
     width: 65vw;
     height: 40vw;
 
-    margin: 60% 0 60%;
+    margin: 60% 0 0;
   }
 
   .cards-btn {
-    position: relative;
+    position: static;
+    margin: 10% auto;
+    display: inline-block;
+    width: 40%;
   }
 
   .cards-btn-left {
