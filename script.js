@@ -164,9 +164,9 @@ const modal_window = function () {
     {
       id: 3,
       header: 'Hannah Arendt Lectures 2015',
-      text: 'design and layout of info material for the <br> Hannah Arendt Lectures 2015<br> in Hanover',
+      text: 'design of info material for the <br> Hannah Arendt Lectures 2015<br> in Hanover',
       url: './images/info material hannah arendt lectures 2015.png',
-      urlText: 'work sample hannah arendt lectures 2015',
+      urlText: 'work samples',
     },
   ];
 

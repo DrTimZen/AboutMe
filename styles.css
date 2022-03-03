@@ -236,7 +236,7 @@ h4:hover {
 
 /* card btns */
 /* .cards-btn {
-  position: relative;
+  /* position: relative;
   top: 48%;
   z-index: 10;
   border: none;
@@ -245,8 +245,7 @@ h4:hover {
   color: #0d694c;
   cursor: pointer;
 } */
-
-.cards-btn:hover {
+*/ .cards-btn:hover {
   color: #2eb086;
 }
 
@@ -468,11 +467,12 @@ h4:hover {
     width: 75vw;
     height: 45vw;
 
-    margin: 60% 0 0;
+    margin: 40% 0 0;
   }
 
   .cards-btn {
-    margin: 10%;
+    position: static;
+    margin: 10% auto 80%;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -486,8 +486,8 @@ h4:hover {
   }
 
   .modal-window {
-    width: 80vw;
-    height: 60vw;
+    width: 90vw;
+    height: 75vw;
   }
 
   .modal-text {
