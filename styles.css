@@ -20,7 +20,7 @@ body {
   width: 70%;
   margin: 0 auto;
   padding: 8% 0;
-  transition: all 1s;
+  transition: all 0.6s;
 }
 
 .section--hidden {
@@ -402,7 +402,7 @@ h4:hover {
     font-size: 4rem;
     position: absolute;
     left: 4rem;
-    top: 18rem;
+    top: 13rem;
   }
 
   .heading-thin {
@@ -412,7 +412,7 @@ h4:hover {
   h4 {
     position: absolute;
     left: 4rem;
-    top: 27rem;
+    top: 22rem;
     width: 65%;
     font-size: 0.9rem;
   }
@@ -429,7 +429,7 @@ h4:hover {
   }
 
   .fixed {
-    transform: translateX(80%) translateY(60%);
+    transform: translateX(80%) translateY(30%);
   }
 
   .roll {
@@ -493,6 +493,6 @@ h4:hover {
   }
 
   .footer {
-    margin-bottom: 30%;
+    margin-bottom: 10%;
   }
 }
