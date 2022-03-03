@@ -85,11 +85,11 @@ sections.forEach(section => {
 image.addEventListener('mouseenter', function () {
   image.classList.add('roll');
   image.classList.remove('fixed');
-  image.setAttribute('src', './images/portrait-blacknwhite.jpeg');
+  image.setAttribute('src', './images/portrait-blacknwhite.webp');
   setTimeout(function () {
     image.classList.remove('roll');
     image.classList.add('fixed');
-    image.setAttribute('src', './images/portrait-tim.jpeg');
+    image.setAttribute('src', './images/portrait-tim.webp');
   }, 3000);
 });
 
@@ -158,14 +158,14 @@ const modal_window = function () {
       id: 2,
       header: 'cd covers dymala',
       text: 'layout cd covers for dymala band',
-      url: './images/dymala-cover.png',
+      url: './images/dymala-cover.webp',
       urlText: 'cd cover dymala band',
     },
     {
       id: 3,
       header: 'Hannah Arendt Lectures 2015',
       text: 'design of info material for the <br> Hannah Arendt Lectures 2015<br> in Hanover',
-      url: './images/info material hannah arendt lectures 2015.png',
+      url: './images/work samples hal 2015.webp',
       urlText: 'work samples',
     },
   ];
