@@ -437,7 +437,7 @@ h4:hover {
   }
 
   .section {
-    width: 100vw;
+    width: 80%;
     height: 100%;
     margin-bottom: 10%;
   }
@@ -457,8 +457,8 @@ h4:hover {
   }
 
   .cards-slider {
-    width: 75vw;
-    height: 50vw;
+    width: 65vw;
+    height: 40vw;
 
     margin: 60% 0 60%;
   }
@@ -493,6 +493,6 @@ h4:hover {
   }
 
   .footer {
-    margin-bottom: 10%;
+    width: 50%;
   }
 }
