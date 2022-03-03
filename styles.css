@@ -17,9 +17,9 @@ body {
 /* GENERAl ELEMENTS */
 
 .section {
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
-  padding: 7% 0;
+  padding: 8% 0;
   transition: all 1s;
 }
 
@@ -30,23 +30,27 @@ body {
 .section-title {
   color: #2eb086;
   text-align: center;
-  margin-top: 3rem;
+  margin-top: 3em;
 }
 
 .section-text {
-  padding: 5% 15%;
+  padding: 5% 17.15%;
   line-height: 1.5;
 }
 
 .btn-scrollDown {
-  margin: 5rem;
+  margin: 5em auto;
   font-size: 1.1rem;
   cursor: pointer;
   border: none;
   background-color: transparent;
-  grid-column: 2;
-  grid-row: 5;
   text-align: center;
+
+  position: relative;
+  bottom: -8em;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 .btn-scrollDown:hover {
@@ -62,45 +66,44 @@ p {
 /* navbar */
 
 .nav {
-  height: 12%;
+  height: 20%;
   width: 100%;
-  padding: 2% 20% 0;
+  padding: 3% 0;
   z-index: 100;
+  position: sticky;
 }
 
 .nav.sticky {
+  background: rgba(255, 248, 243, 0.9);
   position: fixed;
-  width: 80%;
-  background: rgba(255, 248, 243, 0.95);
+  width: 100%;
+  height: 12%;
+  transform: translateX(-10%);
+  padding: 2% 0;
 }
 
 .nav-links {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  gap: 5%;
-  transform: translateX(-5%);
-}
-
-.nav-item {
-  margin: auto;
+  justify-content: center;
+  gap: 15%;
+  padding: 0;
 }
 
 .nav-link:link,
 .nav-link:visited {
-  font-size: 0.8rem;
-  font-weight: 200;
-  color: #cdd0cb;
-  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  color: #949693;
   text-decoration: none;
   display: block;
-  transition: all 1s;
-  width: 10vw;
+  transition: all 0.5s;
 }
 
 .nav-link:hover {
   color: #2eb086;
+
   transition: all 0.7s;
 }
 
@@ -109,25 +112,21 @@ p {
 .header {
   width: 80%;
   height: 50%;
-  margin: 0 auto;
+  margin: 0 auto 20%;
 }
 
 .header-title {
   padding: 10% 0 15%;
-
-  display: grid;
-
-  grid-template-columns: 25% 50% 25%;
-  grid-template-rows: 20% 20% 20% 20% 20%;
 }
 
 h1 {
-  grid-column: 2 / 5;
-  grid-row: 2 / 4;
-  font-size: 5rem;
+  font-size: 5em;
   font-weight: 800;
   line-height: 3.3rem;
-
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  transform: translateX(-1%);
   transition: all 5s;
 }
 
@@ -142,35 +141,37 @@ h1 {
 }
 
 h4 {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: #2eb086;
-  transition: all 0.7s;
-  grid-column: 2/5;
+
   grid-row: 4;
   padding: 0.8%;
-  transform: translateY(-1rem);
+  position: absolute;
+  top: 55%;
+  left: 29.7%;
+  transform: translateX(-1%);
 }
 
 h4:hover {
-  font-size: 1.2rem;
+  font-size: 1.15em;
   transition: all 0.7s;
 }
 
 .header-image {
-  width: 55%;
+  position: absolute;
+  right: 30%;
+  width: 13vw;
   border-radius: 50%;
   grid-column: 3;
-  grid-row: 2;
-  transition: all 0.7s;
 }
 
 .fixed {
-  transform: translateY(-90%) translateX(-120%);
+  transform: translateY(-40%);
   transition: all 0.7s;
 }
 
 .roll {
-  transform: translateY(-120%) translateX(-120%);
+  transform: translateY(-60%);
   transition: all 0.7s;
 }
 
@@ -197,11 +198,11 @@ h4:hover {
 /* projects */
 
 .cards-slider {
-  width: 50vw;
-  height: 60vh;
+  width: 45vw;
+  height: 30vw;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 1.3em auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -236,7 +237,7 @@ h4:hover {
 /* card btns */
 .cards-btn {
   position: relative;
-  top: 50%;
+  top: 48%;
   z-index: 10;
   border: none;
   background: transparent;
@@ -251,58 +252,19 @@ h4:hover {
 
 .cards-btn-left {
   bottom: 13rem;
-  right: 0;
+  right: 8%;
 }
 
 .cards-btn-right {
   bottom: 13rem;
-  left: 92%;
-}
-
-.hidden {
-  visibility: hidden;
-  opacity: 0;
-}
-
-/* contact me */
-
-.contact-icons {
-  padding: 5rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.contact-btn {
-  border: none;
-  background: transparent;
-  cursor: pointer;
-}
-
-.contact-icon {
-  color: #0d694c;
-
-  text-align: center;
-  font-size: 1.8rem;
-}
-
-.contact-icon:hover {
-  color: #2eb086;
-}
-
-/* footer*/
-
-.footer {
-  text-align: center;
-  font-size: 0.5rem;
-  padding: 0 0 3rem;
+  left: 99%;
 }
 
 /* modal window */
 
 .modal-window {
   width: 40vw;
-  height: 50vh;
+  height: 24vw;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -362,4 +324,169 @@ h4:hover {
   backdrop-filter: blur(4px);
   z-index: 100;
   transition: all 0.5s;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* contact me */
+
+.contact-icons {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.contact-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.contact-icon {
+  color: #0d694c;
+
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.contact-icon:hover {
+  color: #2eb086;
+}
+
+/* footer*/
+
+.footer {
+  text-align: center;
+  font-size: 0.5rem;
+  padding: 0 0 3rem;
+}
+
+/*/////////////////////////*/
+/* responsive - mobile */
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    display: none;
+  }
+
+  .btn-scrollDown {
+    position: absolute;
+    left: 50%;
+    bottom: -3%;
+  }
+
+  .header {
+    padding: 0;
+    margin: 8% 0;
+    height: 100vh;
+  }
+
+  .header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+
+  h1 {
+    font-size: 4rem;
+    position: absolute;
+    left: 4rem;
+    top: 18rem;
+  }
+
+  .heading-thin {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  h4 {
+    position: absolute;
+    left: 4rem;
+    top: 27rem;
+    width: 65%;
+    font-size: 0.9rem;
+  }
+
+  h4:hover {
+    font-size: 0.9rem;
+  }
+
+  .header-image {
+    margin: 5%;
+    width: 9rem;
+
+    position: static;
+  }
+
+  .fixed {
+    transform: translateX(80%) translateY(20%);
+  }
+
+  .roll {
+    transform: translateX(80%);
+  }
+
+  .section {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10%;
+  }
+
+  .section-title {
+    margin-top: 10%;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .cards-slider {
+    width: 75vw;
+    height: 50vw;
+    transform: translateX(-5%);
+
+    margin: 60% 0 60%;
+  }
+
+  .cards-btn-left {
+    bottom: 15.5rem;
+    right: 18%;
+  }
+
+  .cards-btn-right {
+    bottom: 15.5rem;
+    left: 99%;
+  }
+
+  .modal-window {
+    width: 80vw;
+    height: 60vw;
+  }
+
+  .modal-text {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: ;
+    width: 100;
+    height: 100%;
+    text-align: center;
+    z-index: 2000;
+  }
+
+  .modal-text p {
+    text-align: center;
+  }
+
+  .footer {
+    margin-bottom: 30%;
+  }
 }
