@@ -235,17 +235,27 @@ h4:hover {
 }
 
 /* card btns */
-/* .cards-btn {
-  /* position: relative;
-  top: 48%;
+
+.cards-slider-btn {
+  position: static;
+  margin: 10% auto 80%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140%;
+  transform: translateY(-13rem);
+}
+
+.cards-btn {
   z-index: 10;
   border: none;
   background: transparent;
   font-size: 1.3rem;
   color: #0d694c;
   cursor: pointer;
-} */
-*/ .cards-btn:hover {
+}
+.cards-btn:hover {
   color: #2eb086;
 }
 
@@ -427,6 +437,10 @@ h4:hover {
     position: static;
   }
 
+  .header-icon {
+    bottom: 4%;
+  }
+
   .fixed {
     transform: translateX(80%) translateY(30%);
   }
@@ -470,13 +484,9 @@ h4:hover {
     margin: 40% 0 0;
   }
 
-  .cards-btn {
-    position: static;
-    margin: 10% auto 80%;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .cards-slider-btn {
+    transform: translateY(3rem);
+    gap: 75%;
   }
 
   .cards-btn-left {
