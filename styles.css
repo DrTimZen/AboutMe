@@ -369,6 +369,12 @@ h4:hover {
 /* responsive - mobile */
 
 @media only screen and (max-width: 700px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .nav {
     display: none;
   }
@@ -417,13 +423,13 @@ h4:hover {
 
   .header-image {
     margin: 5%;
-    width: 9rem;
+    width: 7rem;
 
     position: static;
   }
 
   .fixed {
-    transform: translateX(80%) translateY(20%);
+    transform: translateX(80%) translateY(60%);
   }
 
   .roll {
