@@ -235,7 +235,7 @@ h4:hover {
 }
 
 /* card btns */
-.cards-btn {
+/* .cards-btn {
   position: relative;
   top: 48%;
   z-index: 10;
@@ -244,7 +244,7 @@ h4:hover {
   font-size: 1.3rem;
   color: #0d694c;
   cursor: pointer;
-}
+} */
 
 .cards-btn:hover {
   color: #2eb086;
@@ -465,25 +465,24 @@ h4:hover {
   }
 
   .cards-slider {
-    width: 65vw;
-    height: 40vw;
+    width: 75vw;
+    height: 45vw;
 
     margin: 60% 0 0;
   }
 
   .cards-btn {
-    position: static;
-    margin: 10% auto;
-    display: inline-block;
-    width: 40%;
+    margin: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .cards-btn-left {
-    right: 20%;
   }
 
   .cards-btn-right {
-    left: 80%;
   }
 
   .modal-window {
