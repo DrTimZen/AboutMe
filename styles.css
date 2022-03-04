@@ -74,6 +74,27 @@ p {
   position: sticky;
 }
 
+.nav-icon {
+  height: 30px;
+  display: none;
+  position: absolute;
+  top: 10%;
+  left: 16%;
+  border: none;
+  background: transparent;
+  opacity: 1;
+  transition: all 0.4s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #949693;
+  z-index: 3000;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  transition: all 0.4s;
+}
+
 .nav.sticky {
   background: rgba(255, 248, 243, 0.9);
   position: fixed;
@@ -145,8 +166,6 @@ h4 {
   font-size: 0.9em;
   font-weight: 700;
   color: #2eb086;
-
-  grid-row: 4;
   padding: 0.8%;
   position: absolute;
   top: 55%;
@@ -164,7 +183,6 @@ h4:hover {
   right: 30%;
   width: 13vw;
   border-radius: 50%;
-  grid-column: 3;
 }
 
 .fixed {
@@ -226,7 +244,7 @@ h4:hover {
   justify-content: center;
 }
 
-.project-card > picture {
+.project-card > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -385,7 +403,7 @@ h4:hover {
 /*/////////////////////////*/
 /* responsive - mobile */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   body {
     display: flex;
     justify-content: center;
@@ -400,6 +418,7 @@ h4:hover {
     position: absolute;
     left: 50%;
     bottom: -3%;
+    color: #2eb086;
   }
 
   .header {
@@ -447,6 +466,7 @@ h4:hover {
 
   .header-icon {
     bottom: 4%;
+    color: #2eb086;
   }
 
   .fixed {
@@ -547,6 +567,85 @@ h4:hover {
 
   .btn-scrollDown {
     bottom: -14em;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .nav-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 12rem;
+    left: 3.5rem;
+    width: 20%;
+
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 2.5rem;
+  }
+
+  .nav.sticky {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .header {
+    margin-bottom: 80%;
+  }
+
+  .header-image {
+    top: 25%;
+    right: 18%;
+    width: 20vw;
+    border-radius: 50%;
+  }
+
+  h1 {
+    font-size: 8em;
+    font-weight: 800;
+    line-height: 5.4rem;
+    position: absolute;
+    left: 27%;
+    top: 38%;
+    transition: all 5s;
+  }
+
+  .heading-thin {
+    font-size: 4.7rem;
+  }
+
+  h4 {
+    position: absolute;
+    left: 27%;
+    top: 55%;
+    font-size: 0.98rem;
+  }
+
+  .btn-scrollDown {
+    bottom: -43rem;
+  }
+
+  .section {
+    width: 70%;
+    margin-bottom: 0;
+    padding-bottom: 1%;
+  }
+
+  .section-text {
+    padding: 5% 5% 20%;
+    text-align: justify;
+  }
+
+  .footer {
+    width: 50%;
+    padding: 0 0 3rem;
   }
 }
 
