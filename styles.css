@@ -246,7 +246,7 @@ h4:hover {
   justify-content: center;
   align-items: center;
   gap: 140%;
-  transform: translateY(-17rem);
+  transform: translateY(-15rem);
 }
 
 .cards-btn {
@@ -316,15 +316,19 @@ h4:hover {
 }
 
 .modal-btn {
+  height: 5%;
   position: fixed;
-  right: 2%;
-  top: 2.5%;
+  top: 4%;
+  right: 7%;
   border: none;
   background: transparent;
-  font-family: 'Hubballi';
-  font-size: 1.5rem;
-  color: #2eb086;
   cursor: pointer;
+}
+
+.modal-button-icon {
+  position: fixed;
+  height: 20px;
+  border: none;
 }
 
 .overlay {
