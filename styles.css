@@ -724,11 +724,11 @@ h4:hover {
 
   h4 {
     left: 27%;
-    top: 61%;
+    top: 62%;
   }
 
   .btn-scrollDown {
-    bottom: -20rem;
+    bottom: -19rem;
     color: #2eb086;
     transform: translateX(0);
   }
