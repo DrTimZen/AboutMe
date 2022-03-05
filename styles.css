@@ -405,7 +405,7 @@ h4:hover {
 /*/////////////////////////*/
 /* responsive - mobile */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   body {
     display: flex;
     justify-content: center;
@@ -596,7 +596,7 @@ h4:hover {
     visibility: hidden;
     display: flex;
     position: absolute;
-    top: 4.4rem;
+    top: 6.5rem;
     left: 9rem;
     width: 70%;
 
@@ -645,7 +645,7 @@ h4:hover {
   h4 {
     position: absolute;
     left: 27%;
-    top: 75%;
+    top: 66%;
     font-size: 0.98rem;
   }
 
