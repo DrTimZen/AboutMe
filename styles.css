@@ -80,7 +80,7 @@ p {
   display: none;
   position: absolute;
   top: 10%;
-  left: 20%;
+  left: 15%;
   border: none;
   background: transparent;
   opacity: 1;
@@ -597,7 +597,7 @@ h4:hover {
     display: flex;
     position: absolute;
     top: 100px;
-    left: 150px;
+    left: 130px;
     width: 70%;
 
     flex-direction: row;
@@ -650,7 +650,7 @@ h4:hover {
   }
 
   .btn-scrollDown {
-    bottom: -42rem;
+    bottom: -35rem;
     color: #2eb086;
     transform: translateX(0);
   }
@@ -667,7 +667,7 @@ h4:hover {
   }
 
   .cards-slider {
-    width: 60vw;
+    width: 65vw;
     height: 45vw;
     margin: 20% 0 0;
   }
@@ -680,6 +680,22 @@ h4:hover {
 
   .cards-btn {
     padding: 3% 4.5%;
+  }
+
+  .modal-window {
+    width: 60vw;
+    height: 40vw;
+  }
+
+  .modal-text {
+    font-size: 16px;
+    height: 100%;
+    align-items: baseline;
+    padding: 18%;
+  }
+
+  .modal-text p {
+    text-align: center;
   }
 
   .footer {
