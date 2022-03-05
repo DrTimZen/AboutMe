@@ -12,6 +12,15 @@ const modalBtn = document.querySelector('.modal-btn');
 const sliderCards = document.querySelector('.cards-slider');
 const overlay = document.querySelector('.overlay');
 
+// set emailadress
+
+const setEmail = function () {
+  const me = 'tim.zen';
+  const place = 'icloud.com';
+  document.getElementById('email').href = `mailto:${me}@${place}`;
+};
+setEmail();
+
 // scroll to about me
 
 btnScrollToAboutMe.addEventListener('click', function () {
