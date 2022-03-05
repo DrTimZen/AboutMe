@@ -675,6 +675,7 @@ h4:hover {
   .cards-slider-btn {
     margin-top: 7%;
     gap: 80%;
+    transform: translatex(1rem);
   }
 
   .cards-btn {
