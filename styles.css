@@ -596,7 +596,7 @@ h4:hover {
     visibility: hidden;
     display: flex;
     position: absolute;
-    top: 105px;
+    top: 100px;
     left: 150px;
     width: 70%;
 
@@ -622,7 +622,7 @@ h4:hover {
   }
 
   .header-image {
-    top: 35%;
+    top: 24%;
     right: 18%;
     width: 20vw;
     border-radius: 50%;
@@ -634,7 +634,7 @@ h4:hover {
     line-height: 4rem;
     position: absolute;
     left: 27%;
-    top: 50%;
+    top: 35%;
     transition: all 5s;
   }
 
@@ -645,12 +645,12 @@ h4:hover {
   h4 {
     position: absolute;
     left: 27%;
-    top: 66%;
+    top: 52%;
     font-size: 0.98rem;
   }
 
   .btn-scrollDown {
-    bottom: -43rem;
+    bottom: -23rem;
     color: #2eb086;
   }
 
@@ -685,6 +685,9 @@ h4:hover {
     width: 50%;
     padding: 0 0 3rem;
   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 }
 
 /* GOOGLE FONTS*/
