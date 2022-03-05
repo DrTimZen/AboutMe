@@ -52,6 +52,7 @@ body {
   justify-content: center;
   align-content: center;
   color: #000000;
+  transform: translateX(-50%);
 }
 
 .btn-scrollDown:hover {
@@ -79,7 +80,7 @@ p {
   display: none;
   position: absolute;
   top: 10%;
-  left: 16%;
+  left: 20%;
   border: none;
   background: transparent;
   opacity: 1;
@@ -439,7 +440,7 @@ h4:hover {
     font-size: 4rem;
     position: absolute;
     left: 4rem;
-    top: 13rem;
+    top: 15rem;
   }
 
   .heading-thin {
@@ -449,7 +450,7 @@ h4:hover {
   h4 {
     position: absolute;
     left: 4rem;
-    top: 22rem;
+    top: 23rem;
     width: 65%;
     font-size: 0.9rem;
   }
@@ -468,6 +469,12 @@ h4:hover {
   .header-icon {
     bottom: 4%;
     color: #2eb086;
+    background: rgba(255, 248, 243, 0.6);
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.6rem;
+    text-align: center;
+    border-radius: 50%;
   }
 
   .fixed {
@@ -553,6 +560,8 @@ h4:hover {
   }
 }
 
+/* big screen*/
+
 @media only screen and (min-width: 1420px) {
   .cards-slider {
     margin: 0 auto -10%;
@@ -571,6 +580,8 @@ h4:hover {
   }
 }
 
+/* ipad / tablet*/
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     display: flex;
@@ -582,14 +593,17 @@ h4:hover {
   }
 
   .nav-links {
+    visibility: hidden;
+    display: flex;
     position: absolute;
-    top: 12rem;
-    left: 3.5rem;
-    width: 20%;
+    top: 4.4rem;
+    left: 9rem;
+    width: 70%;
 
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    row-gap: 2.5rem;
+    gap: 6rem;
+    transition: all 0.6s;
   }
 
   .nav.sticky {
@@ -597,40 +611,47 @@ h4:hover {
     position: absolute;
   }
 
+  .move-nav {
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: all 0.6s;
+  }
+
   .header {
     margin-bottom: 80%;
   }
 
   .header-image {
-    top: 25%;
+    top: 35%;
     right: 18%;
     width: 20vw;
     border-radius: 50%;
   }
 
   h1 {
-    font-size: 8em;
+    font-size: 6em;
     font-weight: 800;
-    line-height: 5.4rem;
+    line-height: 4rem;
     position: absolute;
     left: 27%;
-    top: 38%;
+    top: 50%;
     transition: all 5s;
   }
 
   .heading-thin {
-    font-size: 4.7rem;
+    font-size: 3.5rem;
   }
 
   h4 {
     position: absolute;
     left: 27%;
-    top: 80%;
+    top: 75%;
     font-size: 0.98rem;
   }
 
   .btn-scrollDown {
     bottom: -43rem;
+    color: #2eb086;
   }
 
   .section {
@@ -642,6 +663,22 @@ h4:hover {
   .section-text {
     padding: 5% 5% 20%;
     text-align: justify;
+  }
+
+  .cards-slider {
+    width: 60vw;
+    height: 45vw;
+    margin: 20% 0 0;
+  }
+
+  .cards-slider-btn {
+    margin-top: 7%;
+    transform: translateX(-1rem);
+    gap: 80%;
+  }
+
+  .cards-btn {
+    padding: 3% 4.5%;
   }
 
   .footer {

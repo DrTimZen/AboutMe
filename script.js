@@ -11,6 +11,7 @@ const modalWindow = document.querySelector('.modal-window');
 const modalBtn = document.querySelector('.modal-btn');
 const sliderCards = document.querySelector('.cards-slider');
 const overlay = document.querySelector('.overlay');
+const navBtn = document.querySelector('.nav-icon');
 
 // set emailadress
 
@@ -61,6 +62,21 @@ const stickyNav = function (entries) {
     btnScrollToHeader.classList.add('hidden');
   }
 };
+
+// mobile navbar
+
+const navMobile = function () {
+  const openNavbar = function () {
+    navBtn.classList.toggle('rotate');
+    navLinksContainer.classList.toggle('move-nav');
+    navLinksContainer.style.visibility = 'visible';
+  };
+
+  // event listener
+
+  navBtn.addEventListener('click', openNavbar);
+};
+navMobile();
 
 const navObserver = new IntersectionObserver(stickyNav, {
   root: null,
