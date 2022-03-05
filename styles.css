@@ -560,6 +560,57 @@ h4:hover {
   }
 }
 
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+  .header {
+    margin-bottom: 0;
+  }
+
+  .header-image {
+    margin: 5%;
+    width: 7rem;
+
+    position: static;
+    transform: translateY(-80px) translateX(120px);
+  }
+
+  h1 {
+    top: 30%;
+  }
+
+  h4 {
+    top: 62%;
+  }
+
+  .btn-scrollDown {
+    bottom: -40px;
+    transform: translateX(240px);
+  }
+
+  .section {
+    margin: 0 auto 0;
+  }
+
+  .section-title {
+    margin: 0;
+    width: 100%;
+  }
+
+  .section-text {
+    padding: 2% 7% 2%;
+  }
+
+  .cards-slider {
+    width: 65vw;
+    height: 35vw;
+
+    margin: 0;
+  }
+
+  footer {
+    transform: translateY(-80px);
+  }
+}
+
 /* big screen*/
 
 @media only screen and (min-width: 1420px) {
