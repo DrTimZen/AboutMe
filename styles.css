@@ -596,8 +596,8 @@ h4:hover {
     visibility: hidden;
     display: flex;
     position: absolute;
-    top: 6.5rem;
-    left: 9rem;
+    top: 105px;
+    left: 150px;
     width: 70%;
 
     flex-direction: row;
