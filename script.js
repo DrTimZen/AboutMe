@@ -241,3 +241,5 @@ const modal_window = function () {
   });
 };
 modal_window();
+
+console.log(screen.orientation.type);
