@@ -513,6 +513,10 @@ h4:hover {
     padding: 10% 8% 30%;
   }
 
+  .section-contact p {
+    text-align: center;
+  }
+
   .cards-slider {
     width: 75vw;
     height: 45vw;
@@ -529,15 +533,9 @@ h4:hover {
     padding: 3% 4.5%;
   }
 
-  .cards-btn-left {
-  }
-
-  .cards-btn-right {
-  }
-
   .modal-window {
     width: 90vw;
-    height: 75vw;
+    height: 65vw;
   }
 
   .modal-text {
@@ -608,26 +606,6 @@ h4:hover {
 
   footer {
     transform: translateY(-80px);
-  }
-}
-
-/* big screen*/
-
-@media only screen and (min-width: 1420px) {
-  .cards-slider {
-    margin: 0 auto -10%;
-  }
-
-  .section {
-    margin-bottom: 20%;
-  }
-
-  h4 {
-    top: 50%;
-  }
-
-  .btn-scrollDown {
-    bottom: -14em;
   }
 }
 
@@ -790,13 +768,36 @@ h4:hover {
   }
 }
 
-/* GOOGLE FONTS*/
+/* /////////////////////////////////////////////////*/
+/* /////////////////////////////*/
+/* big screen*/
+
+@media only screen and (min-width: 1420px) {
+  .cards-slider {
+    margin: 0 auto -10%;
+  }
+
+  .section {
+    margin-bottom: 20%;
+  }
+
+  h4 {
+    top: 50%;
+  }
+
+  .btn-scrollDown {
+    bottom: -14em;
+  }
+}
+
+/* WEB FONTS*/
 
 @font-face {
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
-  src: local('Manrope Regular'), url('./fonts/') format('woff');
+  src: local('Manrope Regular'),
+    url('./fonts/manrope-regular.woff') format('woff');
 }
 
 @font-face {
