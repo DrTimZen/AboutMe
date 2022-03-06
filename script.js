@@ -32,7 +32,7 @@ btnScrollToAboutMe.addEventListener('click', function () {
 
 btnScrollToHeader.addEventListener('click', function (e) {
   e.preventDefault();
-  header.scrollIntoView({ behavior: 'smooth' });
+  header.scrollIntoView({ behavior: 'smooth', block: 'start' });
 });
 
 // navbar - scroll to section
