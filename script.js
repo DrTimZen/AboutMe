@@ -210,6 +210,7 @@ const modal_window = function () {
       <p>${projectsData[id].text}</p>
       <p>
         <a
+        alt="${projectsData[id].urlText}
           target="_blank"
           class="modal-link"
           href="${projectsData[id].url}"

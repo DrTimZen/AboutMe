@@ -5,89 +5,111 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Google Fonts -->
+    <meta
+      name="description"
+      content="See my new portfolio website with some informations about me and my projects in media design and web development with JavaScript, CSS and HTML. I am always happy getting in touch with new people and ideas!"
+    />
+    <!-- google fonts (now local) -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Hubballi&family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     /> -->
-    <!-- Favicon -->
+    <!-- favicon -->
     <link rel="icon" href="favicon.ico?v=2" />
     <!-- font awesome incons -->
     <script
       src="https://kit.fontawesome.com/88171c5987.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Stylesheet -->
+    <!-- stylesheet -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- JS Script -->
-    <script defer src="script.js" type="module"></script>
+    <!-- js script -->
+    <script defer src="script.js"></script>
   </head>
 
   <body>
+    <!-- header -->
     <section class="header" id="header">
-      <button class="nav-icon">
+      <button class="nav-icon" title="navbar icon for table view">
         <i class="fa fa-solid fa-bars"></i>
       </button>
+      <!-- navbar -->
       <nav class="nav">
         <ul class="nav-links move-nav">
           <li>
-            <a class="nav-link" href="#about-me">about me</a>
+            <a class="nav-link" href="#about-me" alt="go to section: about me"
+              >about me</a
+            >
           </li>
           <li>
-            <a class="nav-link" href="#projects">projects</a>
+            <a class="nav-link" href="#projects" alt="go to section: projects"
+              >projects</a
+            >
           </li>
           <li>
-            <a class="nav-link" href="#contact-me">contact</a>
+            <a
+              class="nav-link"
+              href="#contact-me"
+              alt="go to section: contact me"
+              >contact</a
+            >
           </li>
         </ul>
       </nav>
+      <!-- header title -->
       <div class="header-title">
         <h1>
           <span class="heading-thin">Tim</span><br />
           <span class="heading-thick">Uredat</span>
         </h1>
         <h4>pedagogue / graphic designer / becoming a programmer</h4>
+        <!-- header image -->
         <img
           class="header-image fixed"
           src="./images/portrait-tim.webp"
           alt="portrait tim"
         />
       </div>
-      <button class="btn-scrollDown">
+      <!-- button scroll down -->
+      <button class="btn-scrollDown" title="scroll to section about me">
         <i class="fa fa-solid fa-arrow-down"></i>
       </button>
     </section>
+
+    <!-- section: about me -->
     <section class="section" id="about-me">
       <div class="section-title">
         <h2>about me</h2>
       </div>
-
       <div class="section-text">
         <p>
           I'm a Berlin based pedagogue who worked at social services for nearly
           20 years. Over the time I fell in love with media design. I taught
-          myself Adobe CS especially InDesign, Photoshop and Illustrator and
-          coding websites via HTML and CSS and created layouts and designs on
-          part-time projects.
+          myself Adobe CS especially InDesign, Photoshop and Illustrator, coding
+          websites via HTML and CSS and created layouts and designs on part-time
+          projects.
         </p>
         <p>
-          Currently I am praticing my HTML and CSS skills and get started with
-          JavaScript via freecodecamp, Udemy, codewars and other sources. NodeJS
-          and React will follow. I am highly motivated to get more involved with
-          coding and web development, constantly practicing my skills and gain
-          as much knowledge as possible.
+          Currently I am praticing my HTML and CSS skills and getting started
+          with JavaScript via freecodecamp, Udemy, codewars and other sources.
+          NodeJS and React will follow. I am highly motivated to get more
+          involved with coding and web development, constantly practicing my
+          skills and gain as much knowledge as possible.
         </p>
       </div>
     </section>
 
+    <!-- section: projects -->
     <section class="section" id="projects">
       <div class="section-title">
         <h2>projects</h2>
       </div>
       <div class="section-text">
+        <!-- card slider -->
         <div class="cards-slider">
+          <!-- card 1 -->
           <div class="project-card">
             <img
               class="project-img"
@@ -96,6 +118,7 @@
               id="1"
             />
           </div>
+          <!-- card 2 -->
           <div class="project-card">
             <img
               src="./images/dymala-cover.webp"
@@ -104,6 +127,7 @@
               id="2"
             />
           </div>
+          <!-- card 3 -->
           <div class="project-card">
             <img
               src="./images/hal2015.webp"
@@ -112,19 +136,28 @@
               id="3"
             />
           </div>
+          <!-- card 4 -->
           <div class="project-card">more content to come soon</div>
         </div>
         <div class="cards-slider-btn">
-          <button class="cards-btn cards-btn-left">
+          <!-- slider buttons -->
+          <button
+            class="cards-btn cards-btn-left"
+            title="swipe projects cards to left"
+          >
             <i class="btn-left fa fa-solid fa-chevron-left"></i>
           </button>
-          <button class="cards-btn cards-btn-right">
+          <button
+            class="cards-btn cards-btn-right"
+            title="swipe projects cards to right"
+          >
             <i class="btn-right fa fa-solid fa-chevron-right"></i>
           </button>
         </div>
       </div>
     </section>
 
+    <!-- section: about me -->
     <section class="section" id="contact-me">
       <div class="section-title"><h2>contact me</h2></div>
       <div class="section-text section-contact">
@@ -134,8 +167,14 @@
           <br />
           Just get in touch.
         </p>
+        <!-- contact icons -->
         <div class="contact-icons">
-          <a id="email" href="email me" class="contact-btn">
+          <a
+            id="email"
+            href="email me"
+            class="contact-btn"
+            alt="link to email contact"
+          >
             <i class="contact-icon fa fa-solid fa-at"></i>
           </a>
           <a
@@ -143,6 +182,7 @@
             rel="noopener noreferrer"
             href="https://twitter.com/zen_tim"
             class="contact-btn"
+            alt="link to twitter profile"
           >
             <i class="contact-icon fa fa-brands fa-twitter"></i>
           </a>
@@ -151,12 +191,15 @@
             rel="noopener noreferrer"
             href="https://github.com/DrTimZen"
             class="contact-btn"
+            alt="link to github profile"
           >
             <i class="contact-icon fa fa-brands fa-github"></i>
           </a>
         </div>
       </div>
     </section>
+
+    <!-- footer -->
     <footer class="footer">
       <i class="fa fa-solid fa-copyright"></i> Tim Zen 2022
     </footer>
@@ -164,16 +207,18 @@
       <i class="fa fa-solid fa-arrow-up"></i>
     </a>
 
+    <!-- modal window -->
     <div class="modal-window hidden">
-      <button class="modal-btn">
+      <button class="modal-btn" title="close button for modal window">
         <img
           src="./images/close-button.webp"
-          alt="close button"
+          alt="close button for modal window"
           class="modal-button-icon"
         />
       </button>
     </div>
 
+    <!-- overlay -->
     <div class="overlay hidden"></div>
   </body>
 </html>

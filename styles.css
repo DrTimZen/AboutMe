@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: 'Manrope', normal;
+  font-family: 'Manrope';
   font-weight: 200;
   background-color: #fff8f3;
 }
@@ -72,7 +72,6 @@ p {
   width: 100%;
   padding: 3% 0;
   z-index: 100;
-  position: sticky;
 }
 
 .nav-icon {
@@ -229,6 +228,7 @@ h4:hover {
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 10;
 }
 
 .project-card {
