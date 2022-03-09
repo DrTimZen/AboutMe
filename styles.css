@@ -196,18 +196,18 @@ h4:hover {
   transition: all 0.7s;
 }
 
-.header-icon {
-  font-size: 0.9rem;
+.scrollToTop-icon {
+  font-size: 1rem;
   border: none;
   background: transparent;
-  color: #cdd0cb;
+  color: #2eb086;
   position: fixed;
   bottom: 10%;
   right: 10%;
 }
 
-.header-icon:hover {
-  color: #2eb086;
+.scrollToTop-icon:hover {
+  color: #0d694c;
 }
 
 /* about me */

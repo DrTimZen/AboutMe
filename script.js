@@ -2,7 +2,7 @@
 
 const btnScrollToAboutMe = document.querySelector('.btn-scrollDown');
 const sectionAboutMe = document.querySelector('#about-me');
-const btnScrollToHeader = document.querySelector('.header-icon');
+const btnScrollToHeader = document.querySelector('.scrollToTop-icon');
 const nav = document.querySelector('.nav');
 const navLinksContainer = document.querySelector('.nav-links');
 const image = document.querySelector('.header-image');
