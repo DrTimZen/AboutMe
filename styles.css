@@ -65,6 +65,22 @@ p {
   text-align: center;
 }
 
+.btn-scrollToTop {
+  font-size: 1rem;
+  border: none;
+  background: transparent;
+  color: #2eb086;
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+}
+
+.btn-scrollToTop:hover {
+  color: #0d694c;
+}
+
+/* /////////////////////////////*/
+
 /* navbar */
 
 .nav {
@@ -196,25 +212,15 @@ h4:hover {
   transition: all 0.7s;
 }
 
-.scrollToTop-icon {
-  font-size: 1rem;
-  border: none;
-  background: transparent;
-  color: #2eb086;
-  position: fixed;
-  bottom: 10%;
-  right: 10%;
-}
-
-.scrollToTop-icon:hover {
-  color: #0d694c;
-}
+/* /////////////////////////////*/
 
 /* about me */
 
 .about-me {
   height: 100vh;
 }
+
+/* /////////////////////////////*/
 
 /* projects */
 
@@ -368,6 +374,8 @@ h4:hover {
   opacity: 0;
 }
 
+/* /////////////////////////////*/
+
 /* contact me */
 
 .contact-icons {
@@ -402,7 +410,8 @@ h4:hover {
   padding: 0 0 3rem;
 }
 
-/*/////////////////////////*/
+/* /////////////////////////////////////////////////*/
+/* /////////////////////////////*/
 /* responsive - mobile */
 
 @media only screen and (max-width: 767px) {
@@ -609,6 +618,8 @@ h4:hover {
   }
 }
 
+/* /////////////////////////////////////////////////*/
+/* /////////////////////////////*/
 /* ipad / tablet*/
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -790,6 +801,8 @@ h4:hover {
   }
 }
 
+/* /////////////////////////////////////////////////*/
+/* /////////////////////////////*/
 /* WEB FONTS*/
 
 @font-face {

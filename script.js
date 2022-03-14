@@ -2,7 +2,7 @@
 
 const btnScrollToAboutMe = document.querySelector('.btn-scrollDown');
 const sectionAboutMe = document.querySelector('#about-me');
-const btnScrollToHeader = document.querySelector('.scrollToTop-icon');
+const btnScrollToHeader = document.querySelector('.btn-scrollToTop');
 const nav = document.querySelector('.nav');
 const navLinksContainer = document.querySelector('.nav-links');
 const image = document.querySelector('.header-image');
@@ -28,7 +28,7 @@ btnScrollToAboutMe.addEventListener('click', function () {
   sectionAboutMe.scrollIntoView({ behavior: 'smooth', block: 'center' });
 });
 
-// scroll to header
+// scroll to top
 
 btnScrollToHeader.addEventListener('click', function (e) {
   e.preventDefault();
@@ -193,6 +193,13 @@ const modal_window = function () {
       url: './images/work samples hal 2015.webp',
       urlText: 'work samples',
     },
+    {
+      id: 3,
+      header: 'Zencalc',
+      text: 'A small JS calculator web app',
+      url: 'https://zencalc.netlify.app/',
+      urlText: 'zencalc.netlify.app',
+    },
   ];
 
   // open modal window
@@ -242,6 +249,8 @@ const modal_window = function () {
   });
 };
 modal_window();
+
+// refresh page after orientation change on mobile/tablet
 
 window.addEventListener('orientationchange', function () {
   document.location.reload();
