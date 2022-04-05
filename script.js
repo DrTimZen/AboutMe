@@ -13,7 +13,7 @@ const sliderCards = document.querySelector('.cards-slider');
 const overlay = document.querySelector('.overlay');
 const navBtn = document.querySelector('.nav-icon');
 
-// set emailadress
+// set email address
 
 const setEmail = function () {
   const me = 'tim.zen';
@@ -110,11 +110,11 @@ sections.forEach(section => {
 image.addEventListener('mouseenter', function () {
   image.classList.add('roll');
   image.classList.remove('fixed');
-  image.setAttribute('src', './images/portrait-blacknwhite.webp');
+  image.setAttribute('src', './images/portrait-blacknwhite.png');
   setTimeout(function () {
     image.classList.remove('roll');
     image.classList.add('fixed');
-    image.setAttribute('src', './images/portrait-tim.webp');
+    image.setAttribute('src', './images/portrait-tim.png');
   }, 3000);
 });
 
@@ -174,29 +174,36 @@ const modal_window = function () {
   const projectsData = [
     {
       id: 1,
+      header: 'MøP Festival 2022',
+      text: 'a small webapp  for a private festival',
+      url: 'https://moep2022.netlify.app/',
+      urlText: 'moep2022.netlify.app',
+    },
+    {
+      id: 2,
       header: 'Rollin` Dice Game',
       text: 'a small webapp game for JS practice',
       url: 'https://rollindices.netlify.app/',
       urlText: 'rollindices.netlify.app',
     },
     {
-      id: 2,
+      id: 3,
       header: 'cd covers dymala',
       text: 'layout cd covers for dymala band',
-      url: './images/dymala-cover.webp',
+      url: './images/dymala-cover.png',
       urlText: 'cd cover dymala band',
     },
     {
-      id: 3,
+      id: 4,
       header: 'Hannah Arendt Lectures 2015',
       text: 'design of info material for the <br> Hannah Arendt Lectures 2015<br> in Hanover',
-      url: './images/work samples hal 2015.webp',
+      url: './images/work-samples-hal-2015.png',
       urlText: 'work samples',
     },
     {
-      id: 4,
+      id: 5,
       header: 'Zencalc',
-      text: 'A small JS calculator web app',
+      text: 'a small JS calculator web app',
       url: 'https://zencalc.netlify.app/',
       urlText: 'zencalc.netlify.app',
     },
@@ -217,8 +224,9 @@ const modal_window = function () {
       <p>${projectsData[id].text}</p>
       <p>
         <a
-        alt="${projectsData[id].urlText}
-          target="_blank"
+          alt="${projectsData[id].urlText}
+          target="_blank" 
+          rel="noopener noreferrer"
           class="modal-link"
           href="${projectsData[id].url}"
           >${projectsData[id].urlText}</a
