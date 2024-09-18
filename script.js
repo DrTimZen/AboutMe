@@ -110,11 +110,11 @@ sections.forEach(section => {
 image.addEventListener('mouseenter', function () {
   image.classList.add('roll');
   image.classList.remove('fixed');
-  image.setAttribute('src', './images/portrait-blacknwhite.png');
+  image.setAttribute('src', './images/portrait-tim.png');
   setTimeout(function () {
     image.classList.remove('roll');
     image.classList.add('fixed');
-    image.setAttribute('src', './images/portrait-tim.png');
+    image.setAttribute('src', './images/potraittvtower.png');
   }, 3000);
 });
 
